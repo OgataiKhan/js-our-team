@@ -1,5 +1,6 @@
 'use strict';
 
+// Make objects array
 const members = [
     {
         name: "Wayne Barnett",
@@ -32,3 +33,11 @@ const members = [
         photo: "barbara-ramos-graphic-designer.jpg"
     }
 ];
+
+// Print member data into console
+for (let i = 0; i < members.length; i++) {
+    console.log(`Member ${i+1}:`)
+    for (let key in members[i]) {
+        console.log(`${key}: ${members[i][key]}`);
+    }
+}
